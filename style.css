@@ -10,8 +10,11 @@ body {
     color: #a0a7ab;
     background-color: #181c23 !important;
     margin: 0px;
+   
 }
-
+ html{
+    overflow-x: hidden !important;
+ }
 
 .container{
 
@@ -2207,6 +2210,9 @@ textarea.form-control-2 {
 } */
 @media screen and (max-width: 944px)
 {
+    .container{
+        max-width: 900px;
+    }
     .nk-nav-table ul{
     display:none;  
     }
@@ -2338,7 +2344,7 @@ textarea.form-control-2 {
         border-radius: 4px;
         height: 305px !important;
         width: 338px !important;
-        margin-left: 90px;
+        margin-left: 28px;
     }
     .overlay .nk-gallery-item-overlay .ion-eye {
         position: absolute;
@@ -2456,6 +2462,129 @@ textarea.form-control-2 {
         opacity: 0;
         color: white;
         z-index: 1;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        max-width: 400px;
+    }
+
+    .contct{
+        display: flex;
+        flex-direction: column;
+    }
+    .nk-navbar {
+        position: relative;
+        padding: 27px 0;
+        font-family: Montserrat,sans-serif;
+        font-size: 1.07rem;
+        color: #fff;
+        margin-top: 0px;
+        transition: .3s background-color;
+        z-index: 1000;
+        will-change: background-color;
+    }
+    .nk-new-box-2 {
+        width: 337px;
+        height: 444px;
+        overflow-y: scroll;
+    }
+
+    .nk-popup-gallery .nk-gallery-item-box a img {
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+    height: 216px !important;
+    width: 245px !important;
+    margin-left: 40px;
+    }
+    .overlay .nk-gallery-item-overlay .ion-eye::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 4px;
+        height: 216px;
+        width:245px;
+        background-color: #dd163b;
+        z-index: 1;
+        opacity: 0;
+        transition: all .3s;
+    }
+    .overlay .nk-gallery-item-overlay .ion-eye {
+        position: absolute;
+        top: -216px;
+        left: 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay .nk-gallery-item-overlay .icon {
+        font-size: 40px;
+        position: absolute;
+        top: -127px;
+        left: 136px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        color: white;
+        z-index: 1;
+    }
+
+    .nk-gallery-item-box-2 img {
+        display: block;
+        overflow: hidden;
+        border-radius: 4px;
+        height: 222px;
+        width: 295px;
+    }
+
+    .overlay-2 .nk-gallery-item-overlay-2 .ion-eye-2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 4px;
+        height: 222px;;
+        width: 295px;
+        background-color: #dd163b;
+        z-index: 1;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    .overlay-2 .nk-gallery-item-overlay-2 .ion-eye-2 {
+        position: absolute;
+        top: -221px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay-2 .nk-gallery-item-overlay-2 .icon-2 {
+        font-size: 40px;
+        position: absolute;
+        top: -131px;
+        left: 118px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        color: white;
+        z-index: 1;
+    }
+
+    .nk-decorated-h-2::after {
+        content: "";
+        display: block;
+        flex: 100;
+        border-bottom: 4px solid;
+        transform: translateY(-13px) !important;
+        width: 100%;
+        width: 32%;
+        margin-left: 223px;
     }
 }
 /* last media query */
